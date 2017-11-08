@@ -4,6 +4,7 @@ namespace Grupitöö
 {
     class Program
     {
+        //https://www.codeguru.com/csharp/csharp/cs_syntax/anandctutorials/article.php/c5861/Working-with-Files-in-C.htm - SIIN ON LINK ERINEVATE VAJALIKE TERMINITE JMS-GA
         static void Main(string[] args)
         {
             DirectoryInfo d = new DirectoryInfo(@"C:\Users\opilane\Desktop\TEXTS");
@@ -19,7 +20,18 @@ namespace Grupitöö
             
             Console.ReadLine();
 
+            //New file
+            Console.WriteLine("Mida soovite teha?");
+            Console.WriteLine("Loe faili - Read FAILINIMI");
+            Console.WriteLine("Loo uus fail - New FAILINIMI");
+            Console.WriteLine("Kustuta fail- Delete FAILINIMI");
+            Console.WriteLine("Lahku - Exit");
 
-        }
+            var FAILINIMI = Console.ReadLine();
+            var val = Console.ReadLine();
+            if (val == "Read FAILINIMI")
+            {
+            }
     }
+  }
 }
