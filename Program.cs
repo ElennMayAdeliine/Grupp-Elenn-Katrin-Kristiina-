@@ -37,6 +37,15 @@ namespace Grupitöö
                 Console.WriteLine(text);
                 Console.ReadLine();
             }
+            if (val == "Delete")
+            {
+                Console.WriteLine("Millist faili soovite kustutada?");
+                var FAIL = Console.ReadLine();
+                System.IO.File.Delete(@"C:\Users\opilane\Desktop\TEXTS\" + FAIL + ".txt");
+                Console.WriteLine("Aitäh, fail on kustutatud!");
+                Console.ReadLine();
+
+            }
         }
     }
 }
