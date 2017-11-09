@@ -27,11 +27,16 @@ namespace Grupitöö
             Console.WriteLine("Kustuta fail- Delete FAILINIMI");
             Console.WriteLine("Lahku - Exit");
 
-            var FAILINIMI = Console.ReadLine();
+
             var val = Console.ReadLine();
-            if (val == "Read FAILINIMI")
+            if (val == "Read")
             {
+                Console.WriteLine("Millist faili soovite lugeda?");
+                var FAILINIMI = Console.ReadLine();
+                string text = System.IO.File.ReadAllText(@"C:\Users\opilane\Desktop\TEXTS\" + FAILINIMI + ".txt");
+                Console.WriteLine(text);
+                Console.ReadLine();
             }
+        }
     }
-  }
 }
