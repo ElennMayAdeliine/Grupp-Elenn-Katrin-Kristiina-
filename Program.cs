@@ -7,6 +7,7 @@ namespace Grupitöö
         //https://www.codeguru.com/csharp/csharp/cs_syntax/anandctutorials/article.php/c5861/Working-with-Files-in-C.htm - SIIN ON LINK ERINEVATE VAJALIKE TERMINITE JMS-GA
         static void Main(string[] args)
         {
+            Start:
             DirectoryInfo d = new DirectoryInfo(@"C:\Users\opilane\Desktop\TEXTS");
             FileInfo[] Files = d.GetFiles("*.txt"); 
             string str = "";
@@ -48,17 +49,18 @@ namespace Grupitöö
             }
 
             {
+            
+            if (val == "Exit")
+            {
 
-                string a = "";
-
-                if (a == "Exit")
-                {
-
-                }
-
-
+            }
+            else
+            {
+                Console.WriteLine("Valisite vale variandi! Olemasolevad variandid on: Read, New, Delete, Exit. Vajutage enterit ja proovige uuesti!");
                 Console.ReadLine();
+                goto Start;
             }
         }
     }
+  }
 }
