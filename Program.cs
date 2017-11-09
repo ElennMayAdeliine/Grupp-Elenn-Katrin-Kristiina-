@@ -46,6 +46,19 @@ namespace Grupitöö
                 Console.ReadLine();
 
             }
+
+            {
+
+                string a = "";
+
+                if (a == "Exit")
+                {
+
+                }
+
+
+                Console.ReadLine();
+            }
         }
     }
 }
