@@ -47,7 +47,14 @@ namespace Grupitöö
                 Console.ReadLine();
 
             }
-
+        
+            if (val == "New")
+            {
+                Console.WriteLine("Sisestage uue faili nimi:");
+                string fileName = Console.ReadLine();
+        File.Create(@"C:\Users\Kasutaja\Desktop\kool\programmeerimine\rühmatöö\" + fileName + ".txt");
+                Console.ReadLine();
+            }
             {
             
             if (val == "Exit")
