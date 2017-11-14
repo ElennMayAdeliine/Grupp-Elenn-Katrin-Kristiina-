@@ -23,9 +23,9 @@ namespace Grupitöö
 
             //New file
             Console.WriteLine("Mida soovite teha?");
-            Console.WriteLine("Loe faili - Read FAILINIMI");
-            Console.WriteLine("Loo uus fail - New FAILINIMI");
-            Console.WriteLine("Kustuta fail- Delete FAILINIMI");
+            Console.WriteLine("Loe faili - Read");
+            Console.WriteLine("Loo uus fail - New ");
+            Console.WriteLine("Kustuta fail- Delete ");
             Console.WriteLine("Lahku - Exit");
 
 
