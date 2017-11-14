@@ -52,7 +52,7 @@ namespace Grupitöö
             {
                 Console.WriteLine("Sisestage uue faili nimi:");
                 string fileName = Console.ReadLine();
-        File.Create(@"C:\Users\Kasutaja\Desktop\kool\programmeerimine\rühmatöö\" + fileName + ".txt");
+                File.Create(@"C:\Users\opilane\Desktop\TEXTS" + fileName + ".txt");
                 Console.ReadLine();
             }
             {
